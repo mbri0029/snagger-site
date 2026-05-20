@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <title>Snagger</title>
+  <style>
+    :root {
+      --text: #1a1f2a;
+      --muted: #5a6478;
+      --accent: #1B5EBF;
+      --bg: #ffffff;
+      --border: #e2e5ea;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+      max-width: 520px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      letter-spacing: -0.4px;
+      margin: 0 0 16px 0;
+    }
+    p {
+      color: var(--muted);
+      font-size: 16px;
+      margin: 0 0 32px 0;
+    }
+    .links {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #ECEFF5;
+        --muted: #9aa0ae;
+        --bg: #0d1117;
+        --border: #2a2f37;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="subtitle">Mobile app</div>
+  <h1>Snagger</h1>
+  <p>Offline snag lists and property condition reports for architects, surveyors, inspectors, and contractors.</p>
+  <div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:mb@markbrincat.com">Contact Support</a>
+  </div>
+  <footer>© 2026 Mark Brincat. All rights reserved.</footer>
+</main>
+</body>
+</html>
