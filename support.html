@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snagger — Support</title>
+  <meta name="description" content="Get help with Snagger — the offline snag-list and property condition report app for architects, surveyors, inspectors, and contractors." />
+  <style>
+    /* Reset + base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1a1f2a;
+      background: #ffffff;
+      line-height: 1.55;
+      font-size: 16px;
+    }
+
+    /* Layout */
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 80px 24px 64px;
+    }
+    .center { text-align: center; }
+    .stack > * + * { margin-top: 16px; }
+
+    /* Typography */
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6b7385;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      color: #0d1117;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0d1117;
+      margin-top: 48px;
+      margin-bottom: 16px;
+      letter-spacing: -0.3px;
+    }
+    p.lead {
+      font-size: 17px;
+      color: #5a6478;
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+    p { color: #2d3340; margin-bottom: 12px; }
+    a { color: #1b5ebf; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Primary contact card */
+    .contact-card {
+      background: #f4f6fb;
+      border: 1px solid #e2e5ea;
+      border-radius: 12px;
+      padding: 28px;
+      margin: 32px 0 16px;
+    }
+    .contact-card-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #6b7385;
+      margin-bottom: 10px;
+    }
+    .contact-email {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1b5ebf;
+      word-break: break-all;
+    }
+    .contact-note {
+      font-size: 14px;
+      color: #6b7385;
+      margin-top: 14px;
+    }
+
+    /* FAQ */
+    .faq-item {
+      border-top: 1px solid #e2e5ea;
+    }
+    .faq-item:last-child {
+      border-bottom: 1px solid #e2e5ea;
+    }
+    details {
+      padding: 18px 0;
+    }
+    summary {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0d1117;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      font-weight: 400;
+      font-size: 22px;
+      color: #6b7385;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    details[open] summary::after { content: "−"; }
+    .faq-body {
+      margin-top: 14px;
+      color: #2d3340;
+      font-size: 15px;
+    }
+    .faq-body p { margin-bottom: 10px; }
+    .faq-body ul { padding-left: 20px; margin-bottom: 10px; }
+    .faq-body li { margin-bottom: 6px; }
+
+    /* Footer */
+    footer {
+      margin-top: 72px;
+      padding-top: 32px;
+      border-top: 1px solid #e2e5ea;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7385;
+    }
+    footer .links {
+      margin-bottom: 14px;
+    }
+    footer .links a {
+      margin: 0 8px;
+    }
+    footer .copy { color: #9aa0ae; font-size: 13px; }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .page { padding: 56px 20px 48px; }
+      h1 { font-size: 32px; }
+      p.lead { font-size: 16px; }
+      .contact-card { padding: 22px; }
+      .contact-email { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header class="center">
+      <div class="eyebrow">Support</div>
+      <h1>Snagger Support</h1>
+      <p class="lead">
+        Get help with Snagger — the offline snag-list and property condition report app
+        for architects, surveyors, inspectors, and contractors.
+      </p>
+    </header>
+
+    <!-- Primary contact -->
+    <div class="contact-card center">
+      <div class="contact-card-label">Email us</div>
+      <a href="mailto:mb@markbrincat.com?subject=Snagger%20Support" class="contact-email">
+        mb@markbrincat.com
+      </a>
+      <div class="contact-note">
+        We aim to reply within 2 business days. Please include your device model, iOS or Android version, and the version of Snagger from <em>Settings → App Version</em>.
+      </div>
+    </div>
+
+    <!-- FAQ section -->
+    <h2>Common Questions</h2>
+
+    <div class="faq-item">
+      <details>
+        <summary>Getting started — projects, properties, snag lists and condition reports</summary>
+        <div class="faq-body">
+          <p>Snagger is built around four building blocks:</p>
+          <ul>
+            <li><strong>Project</strong> — the top level. One project per job, contract, or site. Holds everything else.</li>
+            <li><strong>Property</strong> — a single building or unit inside a project (e.g. "Block A, Penthouse"). A project can have many properties.</li>
+            <li><strong>Snag list</strong> — a defects / punch list for one floor of one property. Each snag list has its own plan and pins.</li>
+            <li><strong>Condition report</strong> — a multi-floor property assessment with a facade photo and a plan per floor. Damage reports are a variant for documenting specific damage events.</li>
+          </ul>
+          <p>Typical workflow: create a project → add a property → start a snag list or condition report → import the plan → drop pins where you find issues → finalise → share the PDF.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Adding pins and photos to a plan</summary>
+        <div class="faq-body">
+          <p>Tap the plan to drop a pin. The pin sticks where its tail points. Pinch to zoom and use two fingers to pan while placing.</p>
+          <ul>
+            <li>Add up to 20 photos per pin.</li>
+            <li>Long-press a photo to add a caption (shown next to the photo on the PDF).</li>
+            <li>Tap a photo to annotate with red lines, rectangles, circles, or freehand drawings.</li>
+            <li>Long-press an existing pin to move it.</li>
+            <li>For snag pins, set a severity (low/medium/high) and mark complete with a note and photo when fixed.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Generating PDF reports</summary>
+        <div class="faq-body">
+          <p>Tap "Generate &amp; Finalise Snag List" (or the equivalent on a condition report) and Snagger builds a polished A4 PDF in seconds.</p>
+          <ul>
+            <li>The first generation finalises the list — pins are locked from adding or moving (you can still mark them complete).</li>
+            <li>Tap "Revise" to unlock, make changes, and re-generate. Each re-generation creates a new revision (R1, R2…) and the original is preserved.</li>
+            <li>Every saved revision appears under "Saved Reports". Tap any revision to view or share its PDF.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Branding your reports — logo and letterhead</summary>
+        <div class="faq-body">
+          <p>Settings → Branding lets you upload a company logo and a letterhead. Both appear at the top of every report cover.</p>
+          <ul>
+            <li><strong>Logo</strong> — square, recommended 200×200 px PNG with transparent background. Renders small (~48px tall) next to your company info on the cover.</li>
+            <li><strong>Letterhead</strong> — wide banner, recommended 2000×350 px (about 5.7:1 ratio). Max printed height is 30mm — taller images are auto-scaled.</li>
+            <li>Tap an existing logo or letterhead row to Replace or Remove it.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Subscription — free vs Pro</summary>
+        <div class="faq-body">
+          <p>Snagger is free to download and try. The free tier lets you create one project with unlimited plans, pins, and photos. PDF report generation is gated behind Snagger Pro.</p>
+          <ul>
+            <li><strong>Pro</strong> — €4.99/month or €40/year. Unlocks unlimited projects and PDF generation.</li>
+            <li>If you already paid on another device, open Settings → Subscription → "Restore Purchases" to re-link.</li>
+            <li>Cancellations are handled through your App Store or Play Store account, not inside the app.</li>
+            <li>After resetting the app, use "Restore Purchases" to recover Pro — the entitlement lives with Apple or Google, not in the app.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Backups — exporting and restoring</summary>
+        <div class="faq-body">
+          <p>Settings → Backup &amp; Restore lets you export your entire Snagger database (projects, reports, plans, pins, photos, settings) as a single .zip file.</p>
+          <ul>
+            <li>On export, Snagger opens the share sheet so you can save the .zip to iCloud Drive, Google Drive, email it, or AirDrop it to another device.</li>
+            <li>On iOS the backup is also kept on-device under Files → On My iPhone → Snagger.</li>
+            <li>On Android there is no user-visible backup folder — always pick a destination from the share sheet.</li>
+            <li>To restore: Settings → Restore Backup → pick the .zip. Existing data is replaced. Force-quit and reopen after a restore.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <div class="faq-item">
+      <details>
+        <summary>Common issues</summary>
+        <div class="faq-body">
+          <ul>
+            <li><strong>"I can't create a second project."</strong> — You're on the free tier (1 project limit). Upgrade to Pro from Settings.</li>
+            <li><strong>"Generate report does nothing."</strong> — Make sure you have at least one pin on the snag list. If still stuck, email us with the version number from Settings.</li>
+            <li><strong>"My letterhead is cropped."</strong> — Check the recommended dimensions above. Taller-than-30mm letterheads are auto-scaled.</li>
+            <li><strong>"Pin photos won't open in the editor."</strong> — Force-close the app and reopen. If it persists, the photo file may have been deleted by iOS storage cleanup — re-add the photo.</li>
+            <li><strong>"My subscription is missing after a reinstall."</strong> — Open Settings → Subscription → "Restore Purchases".</li>
+            <li><strong>"How do I delete all my data?"</strong> — Settings → Data &amp; Privacy → Reset App. Wipes everything on the device. Your subscription is preserved — use Restore Purchases after.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <!-- Privacy reminder -->
+    <h2>Privacy</h2>
+    <p>
+      Snagger is offline-first. All your projects, photos, and reports stay on your device.
+      We do not have a server. We do not collect any personal data.
+      Read our full <a href="privacy.html">Privacy Policy</a>.
+    </p>
+
+    <footer>
+      <div class="links">
+        <a href="index.html">Home</a>
+        ·
+        <a href="privacy.html">Privacy Policy</a>
+        ·
+        <a href="mailto:mb@markbrincat.com">Contact</a>
+      </div>
+      <div class="copy">© 2026 Mark Brincat. All rights reserved.</div>
+    </footer>
+
+  </div>
+</body>
+</html>
