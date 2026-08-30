@@ -3,175 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <title>Snagger — Privacy Policy</title>
+  <title>Privacy Policy — Snagger</title>
+
+  <!--
+    This page has MOVED to snagger-app.com and is now a redirect.
+
+    It used to hold its own copy of the text, which is how it came to be wrong:
+    the privacy policy here still described Google Drive as the only place data
+    went, with no mention of Supabase, accounts or cloud sync — untrue since V2
+    and more untrue since sync became free for everyone. A published privacy
+    policy that misdescribes where a user's data goes is not a stale page, it is
+    a false statement, and it stayed live because nobody remembered this copy
+    existed.
+
+    The fix is a redirect rather than a re-write, deliberately. Two copies of
+    legal text maintained by hand will diverge again; there is now exactly one
+    of each, on snagger-app.com, and this URL points at it so anything already
+    linking here still arrives somewhere correct.
+  -->
   <link rel="canonical" href="https://snagger-app.com/privacy.html" />
+  <meta http-equiv="refresh" content="0; url=https://snagger-app.com/privacy.html" />
+  <meta name="robots" content="noindex, follow" />
+  <script>window.location.replace("https://snagger-app.com/privacy.html");</script>
+
   <style>
-    :root {
-      --text: #1a1f2a;
-      --muted: #5a6478;
-      --accent: #1B5EBF;
-      --bg: #ffffff;
-      --card: #f7f8fa;
-      --border: #e2e5ea;
+    body {
+      margin: 0; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1a1f2a; background: #fff; padding: 24px; text-align: center;
     }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      -webkit-text-size-adjust: 100%;
-    }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px 96px 24px;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 24px;
-      margin-bottom: 32px;
-    }
-    h1 {
-      font-size: 28px;
-      letter-spacing: -0.4px;
-      margin: 0 0 6px 0;
-    }
-    .subtitle {
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    .last-updated {
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 8px;
-    }
-    h2 {
-      font-size: 18px;
-      margin-top: 36px;
-      margin-bottom: 8px;
-      letter-spacing: -0.2px;
-    }
-    p, li { font-size: 15.5px; }
-    ul { padding-left: 20px; }
-    li { margin: 4px 0; }
-    a { color: var(--accent); }
-    .tldr {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
-      padding: 16px 20px;
-      border-radius: 6px;
-      margin: 24px 0 36px 0;
-    }
-    .tldr strong { display: block; margin-bottom: 4px; }
-    footer {
-      margin-top: 64px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 13px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #ECEFF5;
-        --muted: #9aa0ae;
-        --bg: #0d1117;
-        --card: #161b22;
-        --border: #2a2f37;
-      }
-    }
+    a { color: #1B5EBF; }
   </style>
 </head>
 <body>
-<main>
-  <header>
-    <div class="subtitle">Snagger</div>
-    <h1>Privacy Policy</h1>
-    <div class="last-updated">Last updated: 6 June 2026</div>
-  </header>
-
-  <div class="tldr">
-    <strong>The short version</strong>
-    Snagger is an offline-first app. It has no Snagger user accounts, no analytics, and no third-party tracking SDKs, and we do not run a server that receives your content. Everything you create — projects, properties, plans, photos, pins, reports, settings — is stored on your device. The App also offers an OPTIONAL backup and sync to your OWN Google Drive: if you turn it on, a copy of your data is uploaded to your personal Google Drive account so you can restore it or move between your own devices. Even then, your data lives in your Google account — we never receive, see, or store it.
-  </div>
-
-  <p>This Privacy Policy explains how the Snagger mobile application ("the App") handles information. Read it together with the Terms &amp; Conditions.</p>
-
-  <h2>1. Information We Process Locally</h2>
-  <p>The App processes the following information on your device:</p>
-  <ul>
-    <li>Project, property, and report data you enter (names, addresses, owner contacts, descriptions, notes, dates).</li>
-    <li>Photos you take in-app or import from your photo library.</li>
-    <li>Plans you import (PDF or image).</li>
-    <li>Drawings, pins, and any markup you create.</li>
-    <li>Your company / branding settings (company name, logo, letterhead, etc.).</li>
-    <li>App preferences (theme, accent colour, layout choices).</li>
-  </ul>
-  <p>This data is stored in the App's local database and document storage on your device.</p>
-
-  <h2>2. Optional Google Drive Backup &amp; Sync</h2>
-  <p>The App offers an optional feature to back up and sync your content using YOUR OWN Google Drive account. It is off until you sign in with Google and enable it. When enabled:</p>
-  <ul>
-    <li>You sign in with Google. The App requests only the "Drive app data" scope — a private, app-specific folder in your Drive that other apps cannot see — plus your account email address (to show which account is connected). It does NOT request access to the rest of your Google Drive.</li>
-    <li>A copy of your content (the database, photos, plans, and generated report PDFs) is uploaded to that private folder in your own Google Drive, and downloaded again when you restore or open the App on another device.</li>
-    <li>Your data is stored in YOUR Google account. Snagger does not run a server and never receives or stores your content. Google processes and stores this data under Google's own Terms of Service and Privacy Policy.</li>
-    <li>You can turn the feature off, or sign out, at any time in Settings. Signing out stops further syncing; data already in your Google Drive stays under your control and can be deleted from your Google account.</li>
-  </ul>
-
-  <h2>3. Permissions We Ask For</h2>
-  <p>The App requests these device permissions, used only for the purposes described:</p>
-  <ul>
-    <li><strong>Camera</strong> — to take photos of conditions, defects, and facades.</li>
-    <li><strong>Photo Library</strong> — to attach photos you already have to pins or reports.</li>
-    <li><strong>Save to Photos</strong> — only when "Save to camera roll" is enabled in Settings, so photos taken in-app also appear in your phone's gallery.</li>
-    <li><strong>Document picker</strong> — to import PDF plans you select.</li>
-    <li><strong>Google sign-in / Drive</strong> — only if you enable the optional Drive backup (see section 2).</li>
-  </ul>
-  <p>You can revoke any of these permissions at any time in your device or Google account settings. Some features will stop working if you do.</p>
-
-  <h2>4. Data You Choose to Share</h2>
-  <p>When you use the App's "Share" function (e.g. sharing a generated report PDF or a backup .zip), your device's native share sheet opens and you choose the destination — for example email, WhatsApp, Drive, or another app. Once you send a file through another app, that app's privacy policy governs what happens to it. We have no visibility into, or control over, that process.</p>
-
-  <h2>5. Children</h2>
-  <p>The App is intended for professional and adult use. It is not directed at children, and we do not knowingly process personal information of children.</p>
-
-  <h2>6. Third Parties</h2>
-  <p>The App does not include third-party advertising networks, analytics services, crash-reporting services, or marketing trackers. The only third-party service the App connects to is Google Drive, and only if you choose to enable backup/sync (see section 2); that connection is governed by Google's terms and privacy policy.</p>
-
-  <h2>7. Operating-System and Store Data</h2>
-  <p>Apple App Store and Google Play may collect aggregated, device-level information about installs, crashes, and app usage as part of their platforms. That data is held by Apple or Google under their own privacy policies and is not shared with us in a way that identifies individuals.</p>
-
-  <h2>8. In-App Purchases and Subscriptions</h2>
-  <p>Snagger Pro is sold as an auto-renewing subscription through Apple's App Store or Google Play. Payment, billing, refunds, and renewal management are handled entirely by Apple or Google under their own terms. We do not see or store your payment card details, billing address, or store account email. The only purchase-related information the App receives is the entitlement state (whether you currently have an active subscription, and which product), which is held on your device alongside the rest of your data. We do not have a server that stores or links purchases to you. You can manage or cancel your subscription at any time in your Apple ID or Google Play account settings.</p>
-
-  <h2>9. Your Rights</h2>
-  <p>Because your data is on your device (and, if you enable it, in your own Google Drive), you have direct control over it:</p>
-  <ul>
-    <li><strong>Access</strong> — view it inside the App at any time.</li>
-    <li><strong>Correction</strong> — edit any record in the App at any time.</li>
-    <li><strong>Deletion</strong> — delete individual records in the App, uninstall the App to remove everything from this device, and/or delete the Snagger backup folder from your Google Drive.</li>
-    <li><strong>Portability</strong> — use "Export Backup" to obtain a copy of your data.</li>
-  </ul>
-  <p>If applicable data-protection laws (such as the EU GDPR) give you further rights, you may exercise them by contacting us at the address below.</p>
-
-  <h2>10. Security</h2>
-  <p>Data sits inside the App's sandboxed storage on your device, protected by the operating system. If you enable Drive backup, your data is protected in transit and at rest by Google's security. We recommend you also use a device passcode or biometric lock to protect access to the device itself.</p>
-
-  <h2>11. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will reflect the latest revision. Continued use of the App after a change means you accept the revised policy.</p>
-
-  <h2>12. Contact</h2>
-  <p>Questions about this Privacy Policy or your data? Email <a href="mailto:contact.snaggerapp@gmail.com">contact.snaggerapp@gmail.com</a>.</p>
-
-  <footer>
-    © 2026 Mark Brincat. All rights reserved.
-  </footer>
-</main>
+  <!-- Shown only if the redirect does not fire (no JS and no meta refresh). -->
+  <p>
+    This page has moved to <a href="https://snagger-app.com/privacy.html">https://snagger-app.com/privacy.html</a>.
+  </p>
 </body>
 </html>

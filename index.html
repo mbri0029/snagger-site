@@ -3,90 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <title>Snagger</title>
+  <title>Snagger — Snagger</title>
+
+  <!--
+    This page has MOVED to snagger-app.com and is now a redirect.
+
+    It used to hold its own copy of the text, which is how it came to be wrong:
+    the privacy policy here still described Google Drive as the only place data
+    went, with no mention of Supabase, accounts or cloud sync — untrue since V2
+    and more untrue since sync became free for everyone. A published privacy
+    policy that misdescribes where a user's data goes is not a stale page, it is
+    a false statement, and it stayed live because nobody remembered this copy
+    existed.
+
+    The fix is a redirect rather than a re-write, deliberately. Two copies of
+    legal text maintained by hand will diverge again; there is now exactly one
+    of each, on snagger-app.com, and this URL points at it so anything already
+    linking here still arrives somewhere correct.
+  -->
   <link rel="canonical" href="https://snagger-app.com/" />
+  <meta http-equiv="refresh" content="0; url=https://snagger-app.com/" />
+  <meta name="robots" content="noindex, follow" />
+  <script>window.location.replace("https://snagger-app.com/");</script>
+
   <style>
-    :root {
-      --text: #1a1f2a;
-      --muted: #5a6478;
-      --accent: #1B5EBF;
-      --bg: #ffffff;
-      --border: #e2e5ea;
+    body {
+      margin: 0; min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1a1f2a; background: #fff; padding: 24px; text-align: center;
     }
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    main {
-      max-width: 520px;
-      padding: 48px 24px;
-      text-align: center;
-    }
-    .subtitle {
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-size: 32px;
-      letter-spacing: -0.4px;
-      margin: 0 0 16px 0;
-    }
-    p {
-      color: var(--muted);
-      font-size: 16px;
-      margin: 0 0 32px 0;
-    }
-    .links {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: center;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover { text-decoration: underline; }
-    footer {
-      margin-top: 48px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --text: #ECEFF5;
-        --muted: #9aa0ae;
-        --bg: #0d1117;
-        --border: #2a2f37;
-      }
-    }
+    a { color: #1B5EBF; }
   </style>
 </head>
 <body>
-<main>
-  <div class="subtitle">Mobile app</div>
-  <h1>Snagger</h1>
-  <p>Site inspections turned into professional PDF reports. Pin defects on plans, add photos and notes, run meetings, and back up to your own Google Drive. Works fully offline on iPhone and iPad — built for architects, surveyors, inspectors and contractors.</p>
-  <div class="links">
-    <a href="support.html">Support</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="mailto:contact.snaggerapp@gmail.com">Contact</a>
-  </div>
-  <footer>© 2026 Mark Brincat. All rights reserved.</footer>
-</main>
+  <!-- Shown only if the redirect does not fire (no JS and no meta refresh). -->
+  <p>
+    This page has moved to <a href="https://snagger-app.com/">https://snagger-app.com/</a>.
+  </p>
 </body>
 </html>
